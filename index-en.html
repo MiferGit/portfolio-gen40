@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Miguel Belalcazar">
+  <meta name="description" content="Soy un programador con una sólida formación como  FullStack, apasionado por el Desarrollo de Sofware y las Tecnologias (TI). Tengo experiencia en JavaScript, HTML/CSS, React, Node.js">
+  <meta name="keywords" content="Full Stack, Desarrollo de Software, Adaptabilidad, Creatividad">
+  <!-- Source  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+  <!-- Icons  -->
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+  <title>Portfolio Miguel</title>
+  <link rel="shortcut icon" href="assets/img/logo-icon.png" type="image/x-icon">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script type="module" src="assets/js/main.js"></script>
+
+  <!-- ----------Emailjs----------- -->
+  <script type="text/javascript"
+  src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+  </script>
+  <script type="text/javascript">
+   (function(){
+    emailjs.init({
+     publicKey: "k0y-ZgV21-h3SEqMq",
+});
+})();
+</script>
+
+</head>
+
+<body>
+  <!-- ----------Loader---------- -->
+  <div class="loader">
+    <div class="loader__fun">
+      <div class="balls"></div>
+      <div class="balls"></div>
+      <div class="balls"></div>
+      <span class="loader__text">Loading...</span>
+    </div>
+  </div>
+
+
+  <!-- ----------section Header---------- -->
+  <header class="header">
+    <nav class="navbar grid--container flex--container">
+      <a class="navbar__logo flex--container" href="#"><i class='bx bxl-mastodon' ></i>Miguel</a>
+
+      <div id="nav" class="navbar__menu">
+        <a href="#close"><i class="bx bx-x btn__close navbar__icon flex--container"></i></a>
+
+        <ul class="navbar__list flex--container">
+          <li class="navbar__item">
+            <a class="navbar__link active" href="#home">Home</a>
+          </li>
+          <li class="navbar__item">
+            <a class="navbar__link" href="#about">About Me</a>
+          </li>
+          <li class="navbar__item">
+            <a class="navbar__link" href="#skills">Skills</a>
+          </li>
+          <li class="navbar__item">
+            <a class="navbar__link" href="#projects">Portfolio</a>
+          </li>
+          <li class="navbar__item">
+            <a class="navbar__link" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+      <div class="navbar__toggles flex--container">
+        <div class="navbar__toggle--darkmode flex--container">
+          <input type="checkbox" name="color-scheme" id="darkmode-toggle" class="navbar__toggle--darkmode-input" />
+          <label for="darkmode-toggle" class="navbar__toggle--darkmode-label">
+            <i class="bx bx-sun navbar__toggle--darkmode-sun"></i>
+            <i class="bx bx-moon navbar__toggle--darkmode-moon"></i>
+          </label>
+        </div>
+        <div class="navbar__toggle--language flex--container">
+          <input type="checkbox" name="language-toggle" id="language-toggle" class="navbar__toggle--language-input" />
+          <label for="language-toggle" class="navbar__toggle--language-label"></label>
+        </div>
+      </div>
+      <a href="#nav"><i class="bx bx-menu btn__open navbar__icon"></i></a>
+    </nav>
+  </header>
+    <!------ main------->
+  <main>
+    <!---------- Section Home----------->
+    <section id="home" class="home">
+      <i class="bx bxl-html5 home__layer home__layer--1" data-speed="-5"></i>
+      <i class="bx bxl-javascript home__layer home__layer--2" data-speed="5"></i>
+      <i class="bx bxl-css3 home__layer home__layer--3" data-speed="2"></i>
+      <i class="bx bxl-nodejs home__layer home__layer--4" data-speed="6"></i>
+      <i class="bx bxl-react home__layer home__layer--5" data-speed="8"></i>
+      <i class="bx bxl-tailwind-css home__layer home__layer--6" data-speed="-2"></i>
+      <i class="bx bxl-redux home__layer home__layer--7" data-speed="4"></i>
+      <i class="bx bxl-typescript home__layer home__layer--8" data-speed="-2"></i>
+      <i class="bx bxl-git home__layer home__layer--9" data-speed="6"></i>
+      <i class="bx bxl-graphql home__layer home__layer--10" data-speed="-7"></i>
+      <i class="bx bx-code-alt home__layer home__layer--11" data-speed="3"></i>
+      <div class="home__container grid--container">
+        <div class="home__image">
+          <img src="assets/img/img-perfil.png" alt="profile photo" title="Miguel Belalcazar" />
+        </div>
+
+        <ul class="home__social flex--container">
+          <li class="home__social-item">
+            <a class="home__social-link" href="https://www.linkedin.com/in/miguel-fernando-belalcazar-castillo-5575a5332?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BM005k0WzSjeLoAKY1SxAPQ%3D%3D" target="_blank"><i class="bx bxl-linkedin"></i></a>
+          </li>
+          <li class="home__social-item">
+            <a class="home__social-link" href="https://wa.me/573173874177" target="_blank"><i class="bx bxl-whatsapp"></i></a>
+          </li>
+          <li class="home__social-item">
+            <a class="home__social-link" href="https://github.com/MiferGit" target="_blank"><i class="bx bxl-github"></i></a>
+          </li>
+          <li class="home__social-item">
+            <a class="home__social-link" href="mailto:mifergpt@gmail.com" target="_blank"><i class="bx bx-envelope"></i></a>
+          </li>
+        </ul>
+
+        <div class="home__info">
+          <h1 class="home__title">Hey,  I'm Miguel</h1>
+
+          <p class="home__description">
+            I am a programmer with a solid background in FullStack, passionate about Software Development and Technologies (IT). I have experience in JavaScript, HTML/CSS, React, Node.js.
+          </p>
+        </div>
+
+        <div class="home__buttons">
+          <a class="btn btn--primary" href="#" title="Descargar mi CV" download="my_cv" rel="noreferrer nofollow">
+            Download CV
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!---------/*Section About Me-------->
+    <section id="about" class="about section">
+      <h2 class="section__title"><./About Me></h2>
+
+      <div class="about__container grid--container">
+        <p class="about__description">
+          I am a programmer with a strong background in software development and a passion for technology. I have experience in languages ​​such as JavaScript and HTML/CSS, which allows me to effectively contribute to web development projects. I am familiar with frameworks such as React and Node.js and I am constantly looking to learn and apply new technologies.
+        </p>
+
+        <div class="about__cards flex--container">
+          <!--Card 1 -->
+          <div class="about__card">
+            <img class="about__card--img" src="assets/img/img-1about.png" alt="Working as a developer"
+              title="Working as a developer" />
+          </div>
+          <!--Card 2 -->
+          <div class="about__card">
+            <img class="about__card--img" src="assets/img/img-2about .png" alt="Working as a team"
+              title="Working as a team" />
+          </div>
+          <!--Card 3 -->
+          <div class="about__card">
+            <img class="about__card--img" src="assets/img/img-3about.png" alt="Web Developer"
+              title="Web Developer" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!---------/*Section Skills-------->
+    <section id="skills" class="skills section">
+      <h2 class="section__title"><./Skills></h2>
+
+      <div class="skills__container grid--container">
+        <p class="skills__description flex--container">
+          I stand out for my ability to solve problems analytically and creatively, which helps me face challenges in the code and find efficient solutions. I value teamwork and collaboration, and during my learning process I have participated in group projects where I have improved my communication and time management skills.
+          <br><br>
+          
+          Committed to my professional development, I am excited to grow in a dynamic environment and add value from day one. My goal is to continue learning and contributing to innovative projects that make a difference..
+        </p>
+
+        <div class="skills__wrapper flex--container">
+          <div class="skills__cards flex--container">
+            <!--Card 1 -->
+            <details class="skills__cards-container" name="moreInfo" open>
+              <summary class="skills__cards-title flex--contLoremainer">
+                <i class="bx bxl-html5 flex--container"></i>
+              </summary>
+              <div class="skills__card-container">
+                <h3 class="skills__card-title">HTML</h3>
+
+                <p class="skills__card-description">
+                  I have experience in HTML5, where I create semantic and accessible web pages, structuring content effectively. I design interactive forms that comply with usability and accessibility best practices, and optimize content loading to ensure efficient performance on various devices and browsers.
+                </p>
+              </div>
+            </details>
+            <!--Card 2 -->
+            <details class="skills__cards-container" name="moreInfo">
+              <summary class="skills__cards-title flex--container">
+                <i class="bx bxl-css3 flex--container"></i>
+              </summary>
+              <div class="skills__card-container">
+                <h3 class="skills__card-title">CSS3</h3>
+
+                <p class="skills__card-description">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Est, fuga nesciunt, officia nobis blanditiis in aperiam
+                  voluptatum officiis repellendus beatae consectetur. In,
+                  provident excepturi? Ratione doloribus consequuntur sit
+                  officia cupiditate.
+                </p>
+              </div>
+            </details>
+            <!--Card 3 -->
+            <details class="skills__cards-container" name="moreInfo">
+              <summary class="skills__cards-title flex--container">
+                <i class="bx bxl-javascript flex--container"></i>
+              </summary>
+              <div class="skills__card-container">
+                <h3 class="skills__card-title">Javascript</h3>
+
+                <p class="skills__card-description">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Est, fuga nesciunt, officia nobis blanditiis in aperiam
+                  voluptatum officiis repellendus beatae consectetur. In,
+                  provident excepturi? Ratione doloribus consequuntur sit
+                  officia cupiditate.
+                </p>
+              </div>
+            </details>
+            <!--Card 4 -->
+            <details class="skills__cards-container" name="moreInfo">
+              <summary class="skills__cards-title flex--container">
+                <i class="bx bxl-react flex--container"></i>
+              </summary>
+              <div class="skills__card-container">
+                <h3 class="skills__card-title">React</h3>
+
+                <p class="skills__card-description">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Est, fuga nesciunt, officia nobis blanditiis in aperiam
+                  voluptatum officiis repellendus beatae consectetur. In,
+                  provident excepturi? Ratione doloribus consequuntur sit
+                  officia cupiditate.
+                </p>
+              </div>
+            </details>
+          </div>
+        </div>
+        <div class="skills__tags flex--container">
+          <h3 class="skills__tags-title">Soft Skills</h3>
+          <div class="skills__tags-container flex--container">
+            <span class="skills__tag">Responsible</span>
+            <span class="skills__tag">Creative</span>
+            <span class="skills__tag">Autodidact</span>
+            <span class="skills__tag">Teamwork</span>
+            <span class="skills__tag">Proactive</span>
+            <span class="skills__tag">Adaptive</span>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!---------/*Section Projects-------->
+    <section id="projects" class="projects section">
+      <h2 class="section__title"><./Projects></h2>
+
+      <div class="projects__container grid--container">
+        <div class="projects__project">
+          <div class="projects__inner grid--container">
+            <div class="projects__image">
+              <img src="assets/img/project1.jpg" alt="project 1" title="Ecommerce Vanilla" />
+            </div>
+
+            <div class="projects__info">
+              <h3 class="projects__name">Project 1</h3>
+              <p class="projects__description">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              </p>
+
+              <div class="projects__buttons">
+                <button class="btn projects__button" type="button">
+                  VIEW DEMO
+                </button>
+                <button class="btn projects__button" type="button">
+                  VIEW CODE
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="projects__project">
+          <div class="projects__inner grid--container">
+            <div class="projects__image">
+              <img src="assets/img/project2.png" alt="project 1" title="Pending project title" />
+            </div>
+
+            <div class="projects__info">
+              <h3 class="projects__name">Project 2</h3>
+              <p class="projects__description">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              </p>
+
+              <div class="projects__buttons">
+                <button class="btn projects__button" type="button">
+                  VIEW DEMO
+                </button>
+                <button class="btn projects__button" type="button">
+                  VIEW CODE
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="projects__project">
+          <div class="projects__inner grid--container">
+            <div class="projects__image">
+              <img src="assets/img/project3.jpg" alt="project 1" title="pending project title" />
+            </div>
+
+            <div class="projects__info">
+              <h3 class="projects__name">Project 3</h3>
+              <p class="projects__description">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              </p>
+
+              <div class="projects__buttons">
+                <button class="btn projects__button" type="button">
+                  VIEW DEMO
+                </button>
+                <button class="btn projects__button" type="button">
+                  VIEW CODE
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="projects__project">
+          <div class="projects__inner grid--container">
+            <div class="projects__image">
+              <img src="assets/img/project4.png" alt="project 1" title="pending project title" />
+            </div>
+
+            <div class="projects__info">
+              <h3 class="projects__name">Project 4</h3>
+              <p class="projects__description">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              </p>
+
+              <div class="projects__buttons">
+                <button class="btn projects__button" type="button">
+                  VIEW DEMO
+                </button>
+                <button class="btn projects__button" type="button">
+                  VIEW CODE
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!---------/*Section Contact-------->
+    <section id="contact" class="contact section">
+      <h2 class="section__title"><./Contact></h2>
+      <div class="contact__container grid--container">
+        <div class="contact__info">
+          <h3 class="contact__info-title">Contact information</h3>
+          <p class="contact__info-description">
+            I am available to discuss new opportunities. You can contact me through the following means:
+          </p>
+
+          <address class="contact__info-data">
+            <div class="contact__info-item">
+              <i class="bx bxl-whatsapp"></i>
+
+              <span class="contact__info-number">
+                <a href="https://wa.me/573173874177?text=Hello!%20nice%20to%20contact%20you" target="_blank"
+                  rel="noreferrer nofollow">Send message to WhatsApp</a>
+              </span>
+            </div>
+
+            <div class="contact__info-item">
+              <i class="bx bx-phone"></i>
+
+              <span class="contact__info-number">
+                <a href="tel:+573173874177" target="_blank" rel="noreferrer nofollow">
+                  +57 317 387 4177
+                </a>
+              </span>
+            </div>
+
+            <div class="contact__info-item">
+              <i class="bx bxs-envelope"></i>
+
+              <span class="contact__info-mail">
+                <a id="mail" href="mailto:test@correo.com" target="_blank" rel="noreferrer nofollow">
+                  mifergpt@gmail.com
+                </a>
+              </span>
+            </div>
+
+            <div class="contact__info-item">
+              <i class="bx bx-map"></i>
+
+              <span class="contact__info-map"> San Juan de Pasto, Colombia. </span>
+            </div>
+          </address>
+        </div>
+
+        <div class="contact__form">
+          <h3 class="contact__form-title">Send Message</h3>
+
+
+          <form id="form" class="contact__form-container">
+            <div class="contact__form-group">
+              <label for="name" class="contact__form-label">Name</label>
+              <input type="text" id="name" name="name" class="contact__form-input" />
+            </div>
+
+            <div class="contact__form-group">
+              <label for="email" class="contact__form-label">Email</label>
+              <input type="email" id="email" name="email" class="contact__form-input" />
+            </div>
+
+            <div class="contact__form-group">
+              <label for="subject" class="contact__form-label">Subject line</label>
+              <input type="text" id="subject" name="subject" class="contact__form-input" />
+            </div>
+
+            <div class="contact__form-group">
+              <label for="message" class="contact__form-label">Message</label>
+              <textarea id="message" name="message" cols="30" rows="10" class="contact__form-input"></textarea>
+            </div>
+            <dialog id="modal">
+              Form sent successfully!
+              <button type="reset" id="btn_close-modal">Close</button>
+            </dialog>
+
+            <button type="submit" class="btn contact__form-button">
+              Send
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+   <!-- /*-------- footer ---------*/ -->
+  <footer class="footer section">
+    <div class="footer__container grid--container">
+      <div class="footer__info">
+        <h3 class="footer__title">Miguel Belalcazar</h3>
+        <p class="footer__description">
+          FullStack Web Developer</p>
+      </div>
+
+      <div class="footer__social">
+        <h3 class="footer__title">Social Media</h3>
+
+        <ul class="footer__social-list">
+          <li class="footer__social-item">
+            <a class="footer__social-link" href="https://www.facebook.com/profile.php?id=61567056572663" target="_blank" rel="noreferrer nofollow"><i
+                class="bx bxl-facebook"></i></a>
+          </li>
+
+          <li class="footer__social-item">
+            <a class="footer__social-link" href="#" target="_blank" rel="noreferrer nofollow"><i
+                class="bx bxl-instagram"></i></a>
+          </li>
+
+          <li class="footer__social-item">
+            <a class="footer__social-link" href="https://x.com/miferCode" target="_blank" rel="noreferrer nofollow"><i class='bx bx-x'></i></a>
+          </li>
+
+          <li class="footer__social-item">
+            <a class="footer__social-link" href="https://www.linkedin.com/in/miguel-fernando-belalcazar-castillo-5575a5332?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BM005k0WzSjeLoAKY1SxAPQ%3D%3D" target="_blank" rel="noreferrer nofollow"><i
+                class="bx bxl-linkedin"></i></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <p class="footer__copy"></p>
+  </footer>
+
+</body>
+
+</html>
