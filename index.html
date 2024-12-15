@@ -10,7 +10,7 @@
     />
     <meta
       name="keywords"
-      content="Full Stack, Desarrollo de Software, Adaptabilidad, Creatividad"
+      content="Full Stack, Desarrollo de Software, Backend, frontend, Creatividad"
     />
     <!-- Fuente  -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -152,7 +152,7 @@
         <div class="home__container grid--container">
           <div class="home__image">
             <img
-              src="assets/img/img-perfil.png"
+              src="assets/img/image1.png"
               alt="profile photo"
               title="Miguel Belalcazar"
             />
@@ -219,12 +219,9 @@
 
       <!-- /*Section About -->
       <section id="about" class="about section">
-
-
-
-        <div class="about__contact" >
+        <div class="about__contact">
           <span class="about__name-contact">Contactame!!</span>
-          <ul class="about__social ">
+          <ul class="about__social">
             <li class="home__social-item">
               <a
                 class="about__social-link"
@@ -260,10 +257,6 @@
           </ul>
         </div>
 
-
-
-
-
         <h2 class="section__title"><./Acerca de Mí></h2>
         <div class="about__container grid--container">
           <p class="about__description">
@@ -280,7 +273,7 @@
             <div class="about__card">
               <img
                 class="about__card--img"
-                src="assets/img/Iam.jpeg"
+                src="assets/img/eradB1.jpeg"
                 alt="Laborando como desarrollador"
                 title="Laborando como desarrollador"
               />
@@ -298,17 +291,18 @@
             <div class="about__card">
               <img
                 class="about__card--img"
-                src="assets/img/eradB1.jpeg"
-                alt="Desarrollador Web"
-                title="desarrollador Web"
+                src="assets/img/Iam.jpeg"
+                alt="frase desarrollador"
+                title="frase desarrollador"
               />
             </div>
           </div>
         </div>
       </section>
-      
+      <!---------/*Section Skills-------->
       <section id="skills" class="skills section">
         <h2 class="section__title"><./Habilidades></h2>
+
         <div class="skills__container grid--container">
           <p class="skills__description flex--container">
             Me destaco por mi capacidad de resolver problemas de manera
@@ -397,10 +391,10 @@
                 </div>
               </details>
 
-               <!--Card 5 -->
-               <details class="skills__cards-container" name="moreInfo">
+              <!--Card 5 -->
+              <details class="skills__cards-container" name="moreInfo">
                 <summary class="skills__cards-title flex--container">
-                  <i class='bx bxl-nodejs flex--container'></i>
+                  <i class="bx bxl-nodejs flex--container"></i>
                 </summary>
                 <div class="skills__card-container">
                   <h3 class="skills__card-title">Node.js</h3>
@@ -414,8 +408,6 @@
                   </p>
                 </div>
               </details>
-
-
             </div>
           </div>
           <div class="skills__tags flex--container">
@@ -431,6 +423,7 @@
           </div>
         </div>
       </section>
+
       <section id="projects" class="projects section">
         <h2 class="section__title"><./Proyectos></h2>
         <div class="projects__container grid--container">
@@ -438,25 +431,39 @@
             <div class="projects__inner grid--container">
               <div class="projects__image">
                 <img
-                  src="assets/img/project1.jpg"
+                  src="assets/img/Pokemon.jpeg"
                   alt="project 1"
-                  title="Ecommerce Vanilla"
+                  title="pokedex-screem"
                 />
               </div>
 
               <div class="projects__info">
-                <h3 class="projects__name">Proyecto 1</h3>
+                <h3 class="projects__name">Pokédex</h3>
                 <p class="projects__description">
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Una Pokédex realizada con HTML, CSS y React es una aplicación
+                  web interactiva que permite a los usuarios explorar
+                  información sobre los Pokémon de manera dinámica, ver sus
+                  detalles y realizar filtros, todo de manera rápida y eficiente
+                  gracias a la reactividad de React.
                 </p>
 
                 <div class="projects__buttons">
-                  <button class="btn projects__button" type="button">
-                    VER DEMO
-                  </button>
-                  <button class="btn projects__button" type="button">
-                    VER CÓDIGO
-                  </button>
+                  <a
+                    href="https://pokedexapi-react.netlify.app/"
+                    target="_blank"
+                  >
+                    <button class="btn projects__button" type="button">
+                      VER DEMO
+                    </button>
+                  </a>
+                  <a
+                    href="https://github.com/MiferGit/proyecto5-react"
+                    target="_blank"
+                  >
+                    <button class="btn projects__button" type="button">
+                      VER CÓDIGO
+                    </button>
+                  </a>
                 </div>
               </div>
             </div>
@@ -466,25 +473,41 @@
             <div class="projects__inner grid--container">
               <div class="projects__image">
                 <img
-                  src="assets/img/project3.jpg"
-                  alt="project 1"
+                  src="assets/img/hotelAppx.png"
+                  alt="project 2"
                   title="Consumiendo API Pokemon con React"
                 />
               </div>
 
               <div class="projects__info">
-                <h3 class="projects__name">Proyecto 2</h3>
+                <h3 class="projects__name">Booking App</h3>
                 <p class="projects__description">
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  BookingApp de hoteles desarrollada con HTML, CSS y React es
+                  una aplicación web moderna que facilita la búsqueda, filtrado
+                  y reserva de hoteles de manera interactiva y eficiente. Este
+                  BookingApp proporciona una experiencia fluida, donde los
+                  usuarios pueden explorar hoteles, aplicar filtros
+                  personalizados y completar su reserva de manera rápida y
+                  sencilla.
                 </p>
 
                 <div class="projects__buttons">
-                  <button class="btn projects__button" type="button">
-                    VER DEMO
-                  </button>
-                  <button class="btn projects__button" type="button">
-                    VER CÓDIGO
-                  </button>
+                  <a
+                    href="https://proyecto6-booking.netlify.app/"
+                    target="_blank"
+                  >
+                    <button class="btn projects__button" type="button">
+                      VER DEMO
+                    </button>
+                  </a>
+                  <a
+                    href="https://github.com/MiferGit/proyecto6-react"
+                    target="_blank"
+                  >
+                    <button class="btn projects__button" type="button">
+                      VER CÓDIGO
+                    </button>
+                  </a>
                 </div>
               </div>
             </div>
@@ -494,25 +517,40 @@
             <div class="projects__inner grid--container">
               <div class="projects__image">
                 <img
-                  src="assets/img/project3.jpg"
-                  alt="project 1"
-                  title="CRUD con React"
+                  src="assets/img/Apprym.jpeg"
+                  alt="project 3"
+                  title=" App Rick y morty"
                 />
               </div>
 
               <div class="projects__info">
-                <h3 class="projects__name">Proyecto 3</h3>
+                <h3 class="projects__name">Rick and Morty App</h3>
                 <p class="projects__description">
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  La aplicación de Rick y Morty está construida con HTML, CSS y
+                  React y permite a los usuarios explorar el universo de la
+                  serie de manera interactiva. Los usuarios pueden filtrar
+                  personajes según su categorías y buscar personajes específicos
+                  para conocer más detalles sobre ellos. Además, se muestra la
+                  dimensión de cada personaje y si está vivo o muerto en el
+                  momento de la consulta. La aplicación se actualiza
+                  automáticamente con los datos más recientes, proporcionando
+                  una experiencia dinámica y fluida.
                 </p>
 
                 <div class="projects__buttons">
-                  <button class="btn projects__button" type="button">
-                    VER DEMO
-                  </button>
-                  <button class="btn projects__button" type="button">
-                    VER CÓDIGO
-                  </button>
+                  <a href="https://proyect3-react.netlify.app/" target="_blank">
+                    <button class="btn projects__button" type="button">
+                      VER DEMO
+                    </button>
+                  </a>
+                  <a
+                    href="https://github.com/MiferGit/proyecto3-react"
+                    target="_blank"
+                  >
+                    <button class="btn projects__button" type="button">
+                      VER CÓDIGO
+                    </button>
+                  </a>
                 </div>
               </div>
             </div>
@@ -522,36 +560,49 @@
             <div class="projects__inner grid--container">
               <div class="projects__image">
                 <img
-                  src="assets/img/project1.jpg"
-                  alt="project 1"
+                  src="assets/img/weatherx.jpeg"
+                  alt="project 4"
                   title="Aplicación del tiempo con React"
                 />
               </div>
 
               <div class="projects__info">
-                <h3 class="projects__name">Proyecto 4</h3>
+                <h3 class="projects__name">Weather App</h3>
                 <p class="projects__description">
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Una app del clima desarrollada con React, HTML y CSS permite a
+                  los usuarios ver el estado del tiempo en tiempo real,
+                  incluyendo información como la temperatura, velocidad del
+                  viento y presión atmosférica. Utiliza React para gestionar el
+                  estado y actualizar la interfaz con datos dinámicos, obtenidos
+                  mediante una API de clima como OpenWeatherMap. El diseño de la
+                  app se estructura con HTML y se estiliza con CSS, garantizando
+                  una experiencia visual atractiva y responsiva.
                 </p>
 
                 <div class="projects__buttons">
-                  <button class="btn projects__button" type="button">
-                    VER DEMO
-                  </button>
-                  <button class="btn projects__button" type="button">
-                    VER CÓDIGO
-                  </button>
+                  <a
+                    href="https://proyecto2-react.netlify.app/"
+                    target="_blank"
+                  >
+                    <button class="btn projects__button" type="button">
+                      VER DEMO
+                    </button>
+                  </a>
+                  <a
+                    href="https://github.com/MiferGit/proyecto2-react"
+                    target="_blank"
+                  >
+                    <button class="btn projects__button" type="button">
+                      VER CÓDIGO
+                    </button>
+                  </a>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </section>
-
-     
-
-
-
+<!---------/*Section Contact-------->
       <section id="contact" class="contact section">
         <h2 class="section__title"><./Contacto></h2>
         <div class="contact__container grid--container">

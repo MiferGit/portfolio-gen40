@@ -340,7 +340,7 @@ html {
           visibility: hidden;
 
           &:checked + label {
-            background-color: #242424;
+            background-color: #3f3c3c;
 
             &::after {
               left: 40px;
@@ -459,7 +459,7 @@ html {
   }
 
   .home__layer--4 {
-    top: 15%;
+    top: 13%;
     left: 70%;
   }
 
@@ -470,7 +470,7 @@ html {
 
   .home__layer--6 {
     top: 38%;
-    left: 75%;
+    left: 50%;
   }
 
   .home__layer--7 {
@@ -502,10 +502,12 @@ html {
     position: relative;
     row-gap: 2rem;
     padding: var(--header-height) 0 3rem;
+
     .home__image {
-      width: clamp(min(320px, 100%), 85vw, 445px);
-      height: auto;
-      margin: 0 auto;
+      /* position: relative; */
+      align-items: center;
+
+      /* top: .2em; */
     }
     .home__social {
       position: absolute;
@@ -539,14 +541,8 @@ html {
           blink 0.4s infinite step-end alternate;
         overflow: hidden;
         transition: 2s;
-        text-shadow: 3px 3px 2px rgb(142, 142, 142);
+        text-shadow: 3px 3px 2px rgb(119, 119, 119);
       }
-      /* .home__title::before {
-				content: "\1F5A5";
-				
-				font-size: 40px;
-				margin-right: 8px;
-			} */
     }
     .home__buttons {
       text-align: center;
@@ -650,7 +646,11 @@ html {
         width: 100%;
 
         .skills__cards-container {
-          background-color: var(--primary-color);
+          /* background-color: var(--primary-color); */
+          background-image: url("../img/c.gif");
+          background-repeat: no-repeat;
+          background-position: right;
+          background-size: cover;
           height: 100px;
           padding: 20px;
           border-radius: 1rem;
@@ -673,6 +673,10 @@ html {
               border-radius: 50%;
               padding: 8px;
             }
+          }
+
+          .skills__card-description {
+            color: rgb(189, 189, 189);
           }
           .skills__card-container {
             color: var(--bg-color-section2);
@@ -706,10 +710,13 @@ html {
         color: var(--bg-color-section2);
         border-radius: 5px;
         box-shadow: 2px 2.5px 3px rgb(105, 100, 100);
+        transition-duration: 2s;
+        transition-timing-function: ease-in-out;
         &:hover {
-          transition: 1.5s;
+          transition: 0s;
           transform: rotate(360deg);
           background-color: #5f9ea0;
+          color: white;
         }
       }
     }
@@ -719,9 +726,15 @@ html {
 /* ============= Projects ============= */
 .projects {
   background-color: var(--bg-color-section2);
+
   .projects__container {
     gap: 2rem;
     .projects__inner {
+      background-image: url("../img/11111.jpeg");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      border-radius: 1em;
       margin: 0;
       .projects__image {
         border-radius: 5px;
@@ -729,8 +742,8 @@ html {
           width: 100%;
           height: auto;
           object-fit: cover;
-          border-radius: 280px;
-          box-shadow: 6px 11px 13px 0 #0000002e;
+          border-radius: 360px;
+          box-shadow: 6px 11px 15px 0 #0000006b;
           animation: showing linear both;
           animation-timeline: view();
           animation-range: entry 25% cover 35%;
@@ -738,13 +751,18 @@ html {
       }
       .projects__info {
         padding: 1rem;
+        .projects__description {
+          color: black;
+          text-align: justify;
+        }
         .projects__buttons {
           display: flex;
           flex-wrap: wrap;
+          justify-content: center;
           gap: 1rem;
           .projects__button {
-            color: var(--bg-color-section2);
-            background-color: var(--primary-color);
+            color: white;
+            background-color: black;
             padding: 0.75rem 1.5rem;
             font-size: var(--small-font-size);
           }
@@ -753,6 +771,8 @@ html {
     }
   }
   .projects__project {
+    transition-duration: 1s;
+    transition-timing-function: ease-in-out;
     &:hover {
       background-color: transparent;
       box-shadow: -1px 0px 50px rgb(220, 220, 220);
@@ -828,7 +848,7 @@ html {
         }
 
         .contact__form-button {
-          font-size: 0.8rem;
+          font-size: 0.9rem;
           font-weight: 600;
         }
       }
@@ -1006,9 +1026,10 @@ html {
   }
 
   .projects {
+    color: black;
     .projects__container {
       padding: 3rem 0;
-      gap: 5rem;
+      gap: 3rem;
 
       .projects__project {
         .projects__inner {
@@ -1047,8 +1068,7 @@ html {
 }
 
 @media (width < 768px) {
-
-	/*header*/
+  /*header*/
   header .navbar {
     display: flex;
     align-items: flex-center;
@@ -1057,7 +1077,6 @@ html {
   .navbar__logo {
     font-size: 1rem;
   }
-
 
   .navbar__menu {
     display: none;
@@ -1071,7 +1090,6 @@ html {
     text-align: center;
   }
 
-
   .navbar__toggles {
     display: flex;
   }
@@ -1084,14 +1102,6 @@ html {
 
   #nav.active {
     display: flex;
-  }
-
-  .home__image {
-    display: flex;
-    justify-content: center;
-  }
-  .home__image-perfil {
-    width: 280px;
   }
 
   /*home-slayer */
@@ -1113,58 +1123,58 @@ html {
     }
 
     .home__layer--1 {
-      top: 18%;
-      left: 17%;
+      top: 89%;
+      left: 3%;
     }
 
     .home__layer--2 {
       top: 28%;
-      left: 85%;
+      left: 87%;
     }
 
     .home__layer--3 {
-      top: 85%;
-      left: 85%;
+      top: 80%;
+      left: 87%;
     }
 
     .home__layer--4 {
       top: 15%;
-      left: 85%;
+      left: 87%;
     }
 
     .home__layer--5 {
-      top: 18%;
-      left: 70%;
+      top: 8%;
+      left: 69%;
     }
 
     .home__layer--6 {
-      top: 36%;
-      left: 75%;
+      top: 40%;
+      left: 87%;
     }
 
     .home__layer--7 {
-      top: 75%;
+      top: 80%;
       left: 10%;
     }
 
     .home__layer--8 {
-      top: 45%;
-      left: 17%;
+      top: 14%;
+      left: 15%;
     }
 
     .home__layer--9 {
-      top: 50%;
-      left: 80%;
+      top: 53%;
+      left: 87%;
     }
 
     .home__layer--10 {
-      top: 90%;
-      left: 2%;
+      top: 89%;
+      left: 73%;
     }
 
     .home__layer--11 {
-      top: 8%;
-      left: 28%;
+      top: 6%;
+      left: 30%;
     }
   }
 
@@ -1188,5 +1198,16 @@ html {
     border-radius: 8px;
     box-shadow: 4px 5px 5px rgba(0, 0, 0, 0.2);
     z-index: 1000;
+  }
+
+  .home__container {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+  }
+  .home__image {
+    width: 76%;
+    margin: 0 auto;
+    top: 2em;
   }
 }
